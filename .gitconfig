@@ -1,0 +1,7 @@
+[user]
+	email = d3psigames@gmail.com
+	name = D3PSI
+[credential]
+	helper = store
+[pull]
+	rebase = true
