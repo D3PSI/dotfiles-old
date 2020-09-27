@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
