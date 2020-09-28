@@ -14,6 +14,11 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
+Plugin 'mxw/vim-jsx'
+Plugin 'w0rp/ale'
+Plugin 'prettier/prettier'
+Plugin 'skywind3000/asyncrun.vim'
+Plugin 'moll/vim-node'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
