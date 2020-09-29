@@ -42,6 +42,10 @@
     path = .vim/bundle/vim-node
     url = https://github.com/moll/vim-node
 
+[submodule ".vim/bundle/vim-glsl"]
+    path = .vim/bundle/vim-glsl
+    url = https://github.com/tikhomirov/vim-glsl
+
 [submodule ".vim_runtime"]
     path = .vim_runtime
     url = https://github.com/amix/vimrc

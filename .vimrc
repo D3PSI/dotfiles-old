@@ -19,6 +19,7 @@ Plugin 'w0rp/ale'
 Plugin 'prettier/prettier'
 Plugin 'skywind3000/asyncrun.vim'
 Plugin 'moll/vim-node'
+Plugin 'tikhomirov/vim-glsl'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
