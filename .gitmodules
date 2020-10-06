@@ -2,10 +2,6 @@
     path = .vim/bundle/Vundle.vim
     url = https://github.com/VundleVim/Vundle.vim
 
-[submodule ".vim/bundle/YouCompleteMe"]
-    path = .vim/bundle/YouCompleteMe
-    url = https://github.com/ycm-core/YouCompleteMe
-
 [submodule ".vim/bundle/jedi-vim"]
     path = .vim/bundle/jedi-vim
     url = https://github.com/davidhalter/jedi-vim
