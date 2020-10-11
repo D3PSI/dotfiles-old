@@ -34,6 +34,18 @@
     path = .vim/bundle/vim-node
     url = https://github.com/moll/vim-node
 
+[submodule ".vim/bundle/vim-obsession"]
+    path = .vim/bundle/vim-obsession
+    url = https://github.com/tpope/vim-obsession
+
+[submodule "clone/path/tmux-resurrect"]
+    path = clone/path/tmux-resurrect 
+    url = https://github.com/tmux-plugins/tmux-resurrect 
+
+[submodule "clone/path/tmux-continuum"]
+    path = clone/path/tmux-continuum
+    url = https://github.com/tmux-plugins/tmux-continuum 
+
 [submodule ".vim/pack/default/start/vim-polyglot"]
     path = .vim/pack/default/start/vim-polyglot
     url = https://github.com/sheerun/vim-polyglot

@@ -14,6 +14,8 @@ yes | cp -rf .bash_profile \
 			.gitconfig \
 			.oh-my-zsh \
 			.tmux.conf \
+			.tmux.conf.local \
+			clone \
 			.vim \
 			.vimrc \
 			.vim_runtime \

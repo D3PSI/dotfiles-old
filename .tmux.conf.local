@@ -1,0 +1,4 @@
+run-shell ~/clone/path/tmux-resurrect/resurrect.tmux
+set -g @resurrect-capture-pane-contents 'on'
+set -g @resurrect-strategy-vim 'session'
+run-shell ~/clone/path/tmux-continuum/continuum.tmux
