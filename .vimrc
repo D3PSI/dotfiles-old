@@ -42,10 +42,10 @@ source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 
-try
-source ~/.vim_runtime/my_configs.vim
-catch
-endtry
-
 set number
 set relativenumber
+
+let b:ale_fixers = ['prettier', 'eslint']
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fix_on_save = 1
