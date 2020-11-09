@@ -15,8 +15,6 @@ yes | cp -rf .bash_profile \
 			.oh-my-zsh \
 			.tmux.conf \
 			.clone \
-			.vim \
 			.vimrc \
-			.vim_runtime \
 			.zshrc \
 			$HOME
