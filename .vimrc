@@ -426,7 +426,8 @@ let g:UltiSnipsEditSplit="vertical"
 let g:ale_linters = {}
 let g:ale_fixers = {"*": ['remove_trailing_lines', 'trim_whitespace'],
                     \"cpp": ['clang-format'],
-                    \"javascript": ["eslint", "prettier"]}
+                    \"javascript": ["eslint", "prettier"],
+                    \"python": ["black", "isort"]}
 let g:ale_fix_on_save = 1
 
 " Tagbar

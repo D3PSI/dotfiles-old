@@ -18,3 +18,4 @@ yes | cp -rf .bash_profile \
 			.vimrc \
 			.zshrc \
 			$HOME
+pip install black isort
