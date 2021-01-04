@@ -429,6 +429,10 @@ let g:ale_fixers = {"*": ['remove_trailing_lines', 'trim_whitespace'],
                     \"javascript": ["eslint", "prettier"],
                     \"python": ["black", "isort"]}
 let g:ale_fix_on_save = 1
+let g:ale_cpp_cc_options = '-std=c++17 -Wall'
+let g:ale_cpp_clangcheck_options = '-std=c++-17'
+let g:ale_cpp_clangd_options = '-std=c++-17'
+let g:ale_cpp_clangtidy_extra_options = '-std=c++-17'
 
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>

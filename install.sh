@@ -19,3 +19,9 @@ yes | cp -rf .bash_profile \
 			.zshrc \
 			$HOME
 pip install black isort
+
+# C++ packages
+# clangd
+# cppcheck
+# clangtidy
+# clang-format
