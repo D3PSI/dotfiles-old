@@ -433,6 +433,7 @@ let g:ale_cpp_cc_options = '-std=c++17 -Wall'
 let g:ale_cpp_clangcheck_options = '-std=c++-17'
 let g:ale_cpp_clangd_options = '-std=c++-17'
 let g:ale_cpp_clangtidy_extra_options = '-std=c++-17'
+let g:asmsyntax = "nasm"
 
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
