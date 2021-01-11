@@ -425,6 +425,7 @@ let g:UltiSnipsEditSplit="vertical"
 " ale
 let g:ale_linters = {}
 let g:ale_fixers = {"*": ['remove_trailing_lines', 'trim_whitespace'],
+                    \"c": ['clang-format'],
                     \"cpp": ['clang-format'],
                     \"javascript": ["eslint", "prettier"],
                     \"python": ["black", "isort"]}
