@@ -196,6 +196,7 @@ set relativenumber
 
 let no_buffers_menu=1
 colorscheme molokai
+hi Normal guibg=NONE ctermbg=NONE
 
 
 set mousemodel=popup
@@ -719,5 +720,3 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
-
-set nowrap
