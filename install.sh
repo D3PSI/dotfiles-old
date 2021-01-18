@@ -17,6 +17,7 @@ yes | cp -rf .bash_profile \
 			.clone \
 			.vimrc \
 			.zshrc \
+            .ctags \
 			$HOME
 pip install black isort
 
