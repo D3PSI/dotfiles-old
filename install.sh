@@ -19,6 +19,8 @@ yes | cp -rf .bash_profile \
 			.zshrc \
             .ctags \
 			$HOME
+mkdir -p $HOME/.ctags.d
+ln -s $HOME/.ctags $HOME/.ctags.d/default.ctags
 pip install black isort
 
 # C++ packages
