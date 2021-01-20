@@ -14,6 +14,7 @@ yes | cp -rf .bash_profile \
 			.gitconfig \
 			.oh-my-zsh \
 			.tmux.conf \
+            .tmux \
 			.clone \
 			.vimrc \
 			.zshrc \
@@ -28,3 +29,4 @@ pip install black isort
 # cppcheck
 # clangtidy
 # clang-format
+# ctags
