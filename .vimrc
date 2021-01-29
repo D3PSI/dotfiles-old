@@ -14,7 +14,7 @@ endif
 
 let g:vim_bootstrap_langs = "c,go,haskell,html,javascript,python,ruby,typescript"
 let g:vim_bootstrap_editor = "vim"				" nvim or vim
-let g:vim_bootstrap_theme = "molokai"
+let g:vim_bootstrap_theme = "codedark"
 let g:vim_bootstrap_frams = ""
 
 if !filereadable(vimplug_exists)
@@ -52,7 +52,7 @@ Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
-Plug 'tomasr/molokai'
+Plug 'tomasiser/vim-code-dark'
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -195,7 +195,7 @@ set number
 set relativenumber
 
 let no_buffers_menu=1
-colorscheme molokai
+colorscheme codedark
 
 set mousemodel=popup
 set t_Co=256

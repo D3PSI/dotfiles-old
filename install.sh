@@ -21,7 +21,9 @@ yes | cp -rf .bash_profile \
 			.vimrc \
 			.zshrc \
             .ctags \
+            .i3 \
 			$HOME
+mkdir -p $HOME/.config/nvim && cp .config/nvim/init.vim $HOME/.config/nvim
 mkdir -p $HOME/.ctags.d
 ln -s $HOME/.ctags $HOME/.ctags.d/default.ctags
 pip install black isort
