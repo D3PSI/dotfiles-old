@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting auto-ls)
 
 function auto-ls-custom() {
-    ls -lah
+    ls --color=tty -lah
 }
 
 AUTO_LS_COMMANDS=(custom)
