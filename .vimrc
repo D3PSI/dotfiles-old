@@ -175,6 +175,9 @@ set smartcase
 
 set fileformats=unix,dos,mac
 
+set cursorline
+set cursorcolumn
+
 if exists('$SHELL')
     set shell=$SHELL
 else
