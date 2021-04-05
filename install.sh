@@ -26,6 +26,8 @@ yes | cp -rf .bash_profile \
             .ctags \
             .i3 \
 			$HOME
+yes | cp -rf bin \
+            $HOME/.local/bin
 mkdir -p $HOME/.config/nvim && cp .config/nvim/init.vim $HOME/.config/nvim
 mkdir -p $HOME/.ctags.d
 ln -s $HOME/.ctags $HOME/.ctags.d/default.ctags
