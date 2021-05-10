@@ -53,6 +53,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasiser/vim-code-dark'
+Plug 'joshdick/onedark.vim'
 Plug 'ziglang/zig.vim'
 
 
@@ -199,7 +200,7 @@ set number
 set relativenumber
 
 let no_buffers_menu=1
-colorscheme codedark
+colorscheme onedark
 
 set mousemodel=popup
 set t_Co=256
