@@ -43,6 +43,7 @@ for_window [class=alacritty instance="__text_scratchpad"] floating enable
 bindsym $mod+g exec text-scratchpad
 
 exec --no-startup-id "$HOME/.screenlayout/default.sh"
+exec --no-startup-id gnome-settings-daemon
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
