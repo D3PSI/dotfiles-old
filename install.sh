@@ -25,6 +25,7 @@ yes | cp -rf .bash_profile \
 			.zshrc \
             .ctags \
             .i3 \
+            .gdbinit \
 			$HOME
 yes | cp -rf scripts \
             $HOME/.local/bin
