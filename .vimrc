@@ -174,8 +174,8 @@ set smartcase
 
 set fileformats=unix,dos,mac
 
-set cursorline
-set cursorcolumn
+"set cursorline
+"set cursorcolumn
 
 if exists('$SHELL')
     set shell=$SHELL
@@ -199,6 +199,11 @@ set relativenumber
 
 let no_buffers_menu=1
 colorscheme onedark
+hi Normal guibg=NONE ctermbg=NONE
+hi Search ctermbg=LightYellow
+hi Search ctermfg=Black
+hi Visual ctermbg=LightYellow
+hi Visual ctermfg=Black
 
 set mousemodel=popup
 set t_Co=256
@@ -325,7 +330,7 @@ nnoremap <silent> <leader>sh :terminal<CR>
 
 " fzf.vim
 nnoremap <silent> <F5> :GFiles<CR>
-
+nnoremap <silent> <F6> :Files<CR>
 
 "*****************************************************************************
 "" Commands

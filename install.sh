@@ -26,6 +26,7 @@ yes | cp -rf .bash_profile \
             .ctags \
             .i3 \
             .gdbinit \
+            .alacritty.yml \
 			$HOME
 yes | cp -rf scripts \
             $HOME/.local/bin
