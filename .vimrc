@@ -55,6 +55,7 @@ Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasiser/vim-code-dark'
 Plug 'joshdick/onedark.vim'
 Plug 'ziglang/zig.vim'
+Plug 'vim-syntastic/syntastic'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -695,6 +696,17 @@ vnoremap <leader>rem  :RExtractMethod<cr>
 
 " typescript
 let g:yats_host_keyword = 1
+
+" Java
+let g:syntastic_java_checkers = ['checkstyle']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 
