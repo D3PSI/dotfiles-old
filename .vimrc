@@ -618,7 +618,7 @@ augroup END
 " java
 augroup vimrc-java
   autocmd!
-  autocmd FileType java silent! execute "! test -f $HOME/.eclim/.eclimd_instances || $ECLIMD &> /dev/null &"
+  autocmd FileType java silent! execute "! test -f $HOME/.eclim/.eclimd_instances || run_eclim &> /dev/null &"
   autocmd BufWritePost *.java :JavaImportOrganize
   autocmd BufWritePost *.java :JavaFormat
 augroup END
