@@ -13,6 +13,7 @@ fi
 if [ ! -d "$ZSH_CUSTOM/plugins/auto-ls" ] ; then
 	git clone https://github.com/desyncr/auto-ls.git $ZSH_CUSTOM/plugins/auto-ls
 fi
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 mkdir -p $HOME/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 yes | cp -rf .bash_profile \
