@@ -81,6 +81,9 @@ Plug 'honza/vim-snippets'
 "" Custom bundles
 "*****************************************************************************
 
+" rust
+Plug 'rust-lang/rust.vim'
+
 " c
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
 Plug 'ludwig/split-manpage.vim'
@@ -717,7 +720,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-
+" rust
+let g:rustfmt_autosave = 1
 
 "*****************************************************************************
 "*****************************************************************************
