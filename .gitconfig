@@ -7,3 +7,5 @@
     rebase = true
 [diff]
     tool = vimdiff
+[commit]
+	gpgsign = true
