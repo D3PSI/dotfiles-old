@@ -112,6 +112,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export JAVA8="JAVA_HOME=/usr/lib/jvm/java-8-openjdk/"
+export JAVA11="JAVA_HOME=/usr/lib/jvm/java-11-openjdk/"
+
+function run_eclim {
+    eval $JAVA11 $ECLIMD
+}
 
 if [ -f $HOME/.zshrc.local ]; then
     source $HOME/.zshrc.local
