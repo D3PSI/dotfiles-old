@@ -72,7 +72,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+F2 exec brave
 #bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F3 exec alacritty -e "ranger"
+bindsym $mod+F3 exec alacritty -e "iranger"
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec alacritty -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
