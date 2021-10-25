@@ -119,6 +119,14 @@ function run_eclim {
     eval $JAVA11 $ECLIMD
 }
 
+function transcode {
+	ffmpeg -i $1 -vcodec libx265 -crf 20 -f mp4 $1.tmp && mv $1.tmp $1
+}
+
+function transcode_all {
+	find . -type f \( -name "*.mp4" \) -exec bash -c "ffmpeg -i {} -vcodec libx265 -crf 20 -f mp4 {}.tmp && mv {}.tmp {}" \;
+}
+
 if [ -f $HOME/.zshrc.local ]; then
     source $HOME/.zshrc.local
 fi
