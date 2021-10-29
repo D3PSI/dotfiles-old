@@ -65,6 +65,9 @@ bindsym XF86MonBrightnessDown exec "$HOME/.i3/bright -; notify-send 'brightness 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+ unmute
+bindsym XF86AudioLowerVolume  exec amixer -q sset Master 5%- unmute
+bindsym XF86AudioMute exec amixer -q sset Master toggle
 
 # Start Applications
 bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
