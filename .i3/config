@@ -52,9 +52,6 @@ exec --no-startup-id gnome-settings-daemon
 
 #exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
-exec --no-startup-id start-pulseaudio-x11
-exec --no-startup-id pa-applet
-exec --no-startup-id pulseeffects --gapplication-service
 exec --no-startup-id gkraken --hide-window
 bindsym $mod+Ctrl+m exec pavucontrol
 
