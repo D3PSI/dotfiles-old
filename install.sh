@@ -35,6 +35,7 @@ mkdir -p $HOME/.config/nvim && cp .config/nvim/init.vim $HOME/.config/nvim
 mkdir -p $HOME/.ctags.d
 ln -s $HOME/.ctags $HOME/.ctags.d/default.ctags
 pip install black isort
+mkdir -p ~/.config/ulauncher/user-themes && git clone https://github.com/sudosubin/one-dark-ulauncher.git ~/.config/ulauncher/user-themes/one-dark-ulauncher
 
 # C++ packages
 # clangd
