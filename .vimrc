@@ -624,6 +624,13 @@ let g:haskell_conceal_wide = 1
 let g:haskell_multiline_strings = 1
 let g:necoghc_enable_detailed_browse = 1
 autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc
+if (executable('haskell-language-server-wrapper'))
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'haskell-language-server-wrapper',
+      \ 'cmd': {server_info->['haskell-language-server-wrapper', '--lsp']},
+      \ 'whitelist': ['haskell'],
+      \ })
+endif
 
 
 " html
