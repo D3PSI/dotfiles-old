@@ -56,6 +56,10 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'joshdick/onedark.vim'
 Plug 'ziglang/zig.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -84,7 +88,6 @@ Plug 'honza/vim-snippets'
 " rust
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
-Plug 'neomake/neomake'
 
 " c
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
@@ -750,10 +753,6 @@ augroup Racer
     autocmd FileType rust nmap <buffer> <leader>gd <Plug>(rust-doc)
     autocmd FileType rust nmap <buffer> <leader>gD <Plug>(rust-doc-tab)
 augroup END
-
-call neomake#configure#automake('w')
-let g:neomake_open_list = 2
-
 
 "*****************************************************************************
 "*****************************************************************************
