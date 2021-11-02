@@ -649,15 +649,6 @@ augroup vimrc-javascript
   autocmd FileType javascript setl tabstop=4|setl shiftwidth=4|setl expandtab softtabstop=4
 augroup END
 
-" java
-augroup vimrc-java
-  autocmd!
-  autocmd FileType java silent! execute "! test -f $HOME/.eclim/.eclimd_instances || run_eclim &> /dev/null &"
-  autocmd BufWritePost *.java :JavaImportOrganize
-  autocmd BufWritePost *.java :JavaFormat
-augroup END
-
-
 " python
 " vim-python
 augroup vimrc-python
