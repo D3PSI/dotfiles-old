@@ -53,7 +53,7 @@ exec --no-startup-id gnome-settings-daemon
 #exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
 exec --no-startup-id gkraken --hide-window
-exec --no-startup-id transmission-gtk -m
+exec --no-startup-id transmission-daemon
 bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
