@@ -2292,3 +2292,4 @@ python Dashboard.start()
 # Local Variables:
 # mode: python
 # End:
+add-auto-load-safe-path /home/d3psi/Documents/rust-workspace/rusty-kern/.gdbinit
