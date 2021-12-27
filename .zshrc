@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting auto-ls)
 
 function auto-ls-custom() {
-    ls --color=tty -lah
+ls --color=tty -lah
 }
 
 AUTO_LS_COMMANDS=(custom)
@@ -111,6 +111,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if [ -f $HOME/.zshrc.local ]; then
+    source $HOME/.zshrc.local
+fi
+
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export JAVA8="JAVA_HOME=/usr/lib/jvm/java-8-openjdk/"
 export JAVA11="JAVA_HOME=/usr/lib/jvm/java-11-openjdk/"
@@ -120,16 +124,12 @@ function run_eclim {
 }
 
 function transcode {
-	ffmpeg -i $1 -vcodec libx265 -crf 20 -f mp4 $1.tmp && mv $1.tmp $1
+    ffmpeg -i $1 -vcodec libx265 -crf 20 -f mp4 $1.tmp && mv $1.tmp $1
 }
 
 function transcode_all {
-	find . -type f \( -name "*.mp4" \) -exec bash -c "ffmpeg -i {} -vcodec libx265 -crf 20 -f mp4 {}.tmp && mv {}.tmp {}" \;
+    find . -type f \( -name "*.mp4" \) -exec bash -c "[ ! -f .{}.finished ] && ffmpeg -i {} -vcodec libx265 -crf 20 -f mp4 {}.tmp && mv {}.tmp {} && touch .{}.finished" \;
 }
-
-if [ -f $HOME/.zshrc.local ]; then
-    source $HOME/.zshrc.local
-fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
