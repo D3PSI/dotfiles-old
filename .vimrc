@@ -55,7 +55,6 @@ Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasiser/vim-code-dark'
 Plug 'joshdick/onedark.vim'
 Plug 'ziglang/zig.vim'
-Plug 'vim-syntastic/syntastic'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
