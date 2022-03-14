@@ -128,7 +128,7 @@ function transcode {
 }
 
 function transcode_all {
-    find $1 -type f \( -name "*.mp4" \) -exec bash -c "[ ! -f .{}.finished ] && ffmpeg -i {} -vcodec libx265 -crf 20 -f mp4 {}.tmp && mv {}.tmp {} && touch .{}.finished" \;
+    find $1 -type f \( -name "*.mp4" \) -exec bash -c "[ ! -f {}.finished ] && ffmpeg -i {} -vcodec libx265 -crf 20 -f mp4 {}.tmp && mv {}.tmp {} && touch {}.finished" \;
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
