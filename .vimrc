@@ -62,6 +62,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'thomasfaingnaert/vim-lsp-snippets'
 Plug 'thomasfaingnaert/vim-lsp-ultisnips'
 Plug 'vim-autoformat/vim-autoformat'
+Plug 'maxmellon/vim-jsx-pretty'
 
 if isdirectory('/usr/local/opt/fzf')
     Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
